@@ -47,18 +47,6 @@ class BraidHeadlessWp
         return str_replace(get_site_url(), self::$frontDomain, $html);
     }
 
-    public static function setPostLink($link, $post)
-    {
-        $link = str_replace(get_site_url(), self::$frontDomain, $link);
-        if (get_post_status($post) === 'private') {
-            $token = self::getToken();
-            if (!empty($token)) {
-                $link .= '?preview_token=' . $token;
-            }
-        }
-        return $link;
-    }
-
     public static function addSettings()
     {
         if (isset($_POST[self::$fieldId])) {
