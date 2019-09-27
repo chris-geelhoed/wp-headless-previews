@@ -108,7 +108,7 @@ wp-content/mu-plugins/0-worker.php
 /wp-blog-header.php
 /wp-comments-post.php
 /wp-commentsrss2.php
-/wp-config-sample.php
+# /wp-config-sample.php
 /wp-cron.php
 /wp-feed.php
 /wp-links-opml.php
