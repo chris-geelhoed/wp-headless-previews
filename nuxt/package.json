@@ -1,0 +1,21 @@
+{
+  "name": "wp-headless-previews",
+  "version": "1.0.0",
+  "description": "WP Nuxt Previews",
+  "author": "Braid",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.1.0",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/axios": "^5.6.0"
+  }
+}
