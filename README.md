@@ -28,4 +28,4 @@ The `wp` directory houses a Wordpress installation. There are 3 plugins included
 Aside from those plugins, the Wordpress installation can be totally standard. Reference the example `.htaccess` and `wp-config.php` files - there are a few variables that must be provided for this system to work.
 
 ### Nuxt (Front Facing Part)
-Nuxt has been set to call Wordpress for content. See the example `.env` file - you'll need to specific the url of the Wordpress site there.
+Nuxt has been set to call Wordpress for content. See the example `.env` file - you'll need to specify the url of the Wordpress site there. To get a general sense of how this works look at the auth middleware file in nuxt - in this example I am using axios to make requests to the CMS and am using middleware to add a default header to each request (using the token originally received as a query string) and am altering the request to ask for posts with all status' - not just published posts.
